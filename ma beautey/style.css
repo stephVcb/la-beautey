@@ -1,0 +1,145 @@
+body {
+    /* background-image:url("./beybey11.jpg"); mettre une image en arrière plan*/
+    margin-left: 1.5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+div .navbar li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    
+}
+
+
+ol {
+    display: inline-block;
+}
+
+ul.navbar li a {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 7px #C00297;
+    color: #7e5167;
+    transition: font-size 0.5s ease-in-out;
+}
+
+ul.navbar li a:hover {
+    font-size: 1.5em;
+}
+
+.navbar li {
+    float: left;
+    padding: 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+h1 {
+    text-shadow: 0 0 1px #e063c5;
+    color: #7e5167;
+    text-align: center;
+}
+
+/* text-shadow: 0 0 7px #f0ebeb;
+    color:#C00297;
+ */
+
+h2,
+h3,
+h4,
+h5 {
+    text-shadow: 0 0 1px #C00297;
+    color: #5D3C47;
+    letter-spacing: 1px;
+
+}
+
+h3 {
+    text-shadow: 0 0 1px #C00297;
+    color: #5D3C47;
+}
+
+dt {
+    text-shadow: 0 0 1px #fcfbfc;
+    color: #C00297;
+    text-decoration: underline;
+    text-decoration-color: #f8f8f8;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+audio{
+    color: #C00297;
+}
+
+main{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    border:10px solid #C00297;
+    border:inset;
+    width: 40%;
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.card img {
+    width: 80%;
+} 
+button{
+    color: #C00297;
+    display: block;
+    background-color:#e063c5;
+    border-radius: 10px;
+    border: 4px double #5D3C47;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 200px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.button:hover{
+    background-color: #ffffff;
+    border: 2px solid #e063c5;
+    box-shadow: 10px 5px 5px #5D3C47;
+    color: #C00297;
+    text-align: center;
+    font-size: 22px;
+}

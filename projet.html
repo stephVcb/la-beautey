@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet2</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="test4.js" defer></script>
+
+</head>
+
+<body>
+    <!-- <div id="animate"> <img src="./assets/images-vidéos/teteBeybey.png" alt=""></div> -->
+        <div id="animate2"> <img src="./assets/images-vidéos/teteBeybey2.png"></div>
+        <div id="animate3"> <img src="./assets/images-vidéos/teteBeybey2.png"></div>
+    
+    <img id="curseur" src="./assets/images-vidéos/curseur.png " alt="Image qui suit la souris"
+        style="position:absolute;display:block;z-index:5;" />
+    <div class="wrapDiv">
+        <button type="menu" class="wrap" onclick="myFunction()">
+                <image src="./assets/images-vidéos/teteBeybey.png" />
+            </button>
+        <div id="navbarId" class="navbar">
+            <ul>
+                <li> <a href="./ma beautey/index.html">Accueil</a></li>
+                <li> <a href="./ma beautey/famille2.html">Bey-family</a></li>
+                <li> <a href="./ma beautey/activité.html">Activités</a></li>
+                <li> <a href="./ma beautey/Quizz.html">Quizz</a></li>
+                <li> <a href="./ma beautey/galerie.html">Galerie </a></li>
+                <li> <a href="./ma beautey/medias.html">Médias</a></li>
+                <li> <a href="./ma beautey/formulaire.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Questions Sur la beautey</h1>
+    <div id="container">
+
+        <div id="pret">
+            <p> On va voir si tu as été attentif à la beautey ...</p>
+            <p>Gare à toi si tu réponds mal car la beautey t'en voudra</p>
+            <p> Clique sur le bouton pour commencer....Si tu l'ose</p>
+            <button type="start" onclick="beginQuizz()" class="deco">Commence le quizz ici</button>
+        </div>
+        <div id="questionsHtml">
+            <h2 id="h2"></h2>
+            <div id="reposesHtml">
+
+                <button id="buttonTrue" name="buttonTrue" onclick="verifierReponse(this)" value="1"
+                    class="deco">Vrai</button>
+                <button id="buttonFalse" name="buttonFalse" onclick="verifierReponse(this)" value="2"
+                    class="deco">Faux</button>
+                <p id="resultat"></p>
+            </div>
+            <div id="suivantDiv">
+                <button id="suivantButton" onclick="nextQ(this)" class="deco">Next</button>
+            </div>
+        </div>
+        <div id="score" onclick="scoreQuizz()"></div>
+        <div>
+            <button id="recommencer" onclick="recommencer()" style="display: none;" class="deco">
+                recommence pour la beautey!</button>
+            <img id="cercle" src="./ma beautey/beybey9.jpg" width="50%" height="50%" alt="">
+        </div>
+    </div>
+    <div>
+
+        <audio controls>
+            <source src="./ma beautey/La Beauté de la Vie.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+
+</html>
+
+<!-- <form>
+    <p>En quelle année est née la beautey?</p>
+    <div >
+        <input type="radio" id="r1" name="r1" value="2018" />
+        <label for="contactChoice1">2018</label>
+        
+        <input type="radio" id="r1" name="r1" value="2023" />
+        <label for="contactChoice2">2023</label>
+        
+        <input type="radio" id="r1" name="r1" value="2014" />
+        <label for="contactChoice3">2014</label>
+    </div>
+    
+    <div>
+        <button > Click me </button>
+        
+    </div>
+    <p></p>
+    
+    </form>
+    
+    
+    <div id="container">
+        <header>
+            <h1>Question sur une beautey</h1>
+        </header>
+        <nav>
+            <form>
+                <label for="qu1" >En quelle année est née cette beautey? 
+                    <input type="radio" name="r1" id="r1.1">A: 2018
+                    <input type="radio" name="r1" id="r1.2">B: 2010
+                    <input type="radio" name="r1" id="r1.3">C: 2023
+                </label>
+                <button type="submit"> Envoyer</button>
+            </form>
+        </nav>
+        
+    </div> -->
+<!-- <div id="question-pret"> Es-tu prêt?<input type="text" placeholder="Oui ou Non" id="pret" >
+    <button id="boutonPret" onclick="enleveCache()"> Valide ta réponse</button></div>
+    <div id="resultat"></div>
+    <form id="formulaire" class="cache">
+        <div id="question"></div>
+        <div id="choices">
+            <label>
+                <input type="radio" id="repons0" name="reponse0"> 2014
+            </label>
+            <label>
+                <input type="radio" id="repons1" name="reponse0">2018
+            </label>
+            <label>
+                <input type="radio" id="repons2" name="reponse0">2023
+            </label>
+        </div>
+        <div id="vraiOuFaux"></div>
+    
+        <button id="submit" onclick="verification()"> As-tu réussi?</button>
+    </form> -->

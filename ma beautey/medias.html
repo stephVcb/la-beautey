@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boules.css">
+
+    <script type="text/javascript">
+                document.onmousemove = suitsouris;
+                function suitsouris(evenement)
+                {
+                        if(navigator.appName=="Microsoft Internet Explorer")
+                        {
+                                var x = event.x+document.body.scrollLeft;
+                                var y = event.y+document.body.scrollTop;
+                        }
+                        else
+                        {
+                                var x =  evenement.pageX;
+                                var y =  evenement.pageY;
+                        }
+                        document.getElementById("curseur").style.left = (x+1)+'px';
+                        document.getElementById("curseur").style.top  = (y+1)+'px';
+                }
+        
+        </script>
+</head>
+<body>
+    <img id="curseur"src="curseur.png" alt="Image qui suit la souris"  style="position:absolute;display:block;z-index:5;" />
+    <div>
+        <ul class="navbar">
+            <li> <a href="index.html">Accueil</a>
+            <li> <a href="famille2.html">Bey-family</a>    
+            <li> <a href="activité.html">Activités</a></li>
+            <li> <a href="Quizz.html">Quizz</a></li>
+            <li> <a href="galerie.html">Galerie </a></li>
+            <li><a href="medias.html">Médias</a></li>
+            <li> <a href="formulaire.html">Contact</a></li>
+
+        </ul>
+    </div>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
+    <h1>Ecoutez les nouveaux son de la beautey!</h1>
+    <br>
+    <h2>Regardez-là</h2>
+    <audio controls>
+        <source src="Regardez La.mp3" type="audio/mpeg">
+      </audio> 
+      <br>
+    <h2>Mon bébé</h2>
+    <audio controls>
+        <source src="Mon Bébé.mp3" type="audio/mpeg">
+      </audio> 
+      <br>
+      <h2>Aika</h2>
+      <audio controls>
+        <source src="Aika .mp3" type="audio/mpeg">
+      </audio> 
+      <h2>La beauté de la vie</h2>
+      <audio controls>
+        <source src="La Beauté de la Vie.mp3" type="audio/mpeg">
+      </audio> 
+</body>
+
+</html>

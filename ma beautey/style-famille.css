@@ -1,0 +1,83 @@
+body {
+    /* background-image:url("./beybey11.jpg"); mettre une image en arrière plan*/
+    margin-left: 1.5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+div .navbar li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+
+ol {
+    display: inline-block;
+}
+
+ul.navbar li a {
+    text-align: center;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0 7px #C00297;
+    color: #7e5167;
+    transition: font-size 0.5s ease-in-out;
+}
+
+ul.navbar li a:hover {
+    font-size: 1.5em;
+}
+
+.navbar li {
+    float: left;
+    padding: 30px;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+
+main{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: gainsboro;
+    margin-top: auto;
+}
+
+
+.card{
+    border: 2px solid black;
+    background-color: rgb(100, 32, 95);
+    width: 40%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: blueviolet;
+    text-shadow: 0 0 10px white;
+}
+
+.card img {
+    width: 80%;
+} 
